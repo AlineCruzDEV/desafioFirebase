@@ -11,8 +11,8 @@
         android:theme="@style/Theme.DesafioFirebase">
         <activity android:name=".CadastroActivity"></activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashScreenActivity" />
-        <activity android:name=".HomeActivity">
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
