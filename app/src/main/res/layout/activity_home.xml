@@ -8,7 +8,7 @@
     android:layout_gravity="center"
     android:background="@color/fundo_home"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
+    tools:context=".jogo.ui.HomeActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/homeToolbar"

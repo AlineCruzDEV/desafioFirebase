@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_desafio_firebase"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioFirebase">
-        <activity android:name=".CadastroActivity"></activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".jogo.ui.CadastroActivity"></activity>
+        <activity android:name=".jogo.ui.LoginActivity" />
+        <activity android:name=".jogo.ui.HomeActivity" />
+        <activity android:name=".jogo.ui.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
