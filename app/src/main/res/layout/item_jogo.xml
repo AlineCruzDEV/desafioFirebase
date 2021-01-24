@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:srcCompat="@drawable/god_of_war"
+        android:scaleType="fitXY"
         android:adjustViewBounds="true" />
 
 
