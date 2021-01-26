@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_desafio_firebase"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioFirebase">
-        <activity android:name=".jogo.ui.DetalheJogoActivity"></activity>
+        <activity android:name=".jogo.ui.CadastraJogoActivity"></activity>
+        <activity android:name=".jogo.ui.DetalheJogoActivity" />
         <activity android:name=".jogo.ui.CadastroActivity" />
         <activity android:name=".jogo.ui.LoginActivity" />
         <activity android:name=".jogo.ui.HomeActivity" />

@@ -1,5 +1,6 @@
 package com.digitalhouse.desafiofirebase.jogo.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -45,7 +46,16 @@ class HomeActivity : AppCompatActivity() {
         listaJogos.add(jogo2)
         recyclerView.adapter = JogoAdapter(listaJogos,this)
 
+        binding.fabCadastrarJogo.setOnClickListener {
+            callCadastraJogo()
+        }
 
+
+    }
+
+    private fun callCadastraJogo() {
+        var intent = Intent(application, CadastraJogoActivity::class.java)
+        startActivity(intent)
     }
 
     fun getListaJogos() {
