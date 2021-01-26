@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import com.digitalhouse.desafiofirebase.databinding.ActivityDetalheJogoBinding
 import com.digitalhouse.desafiofirebase.jogo.entities.Jogo
+import com.squareup.picasso.Picasso
 
 class DetalheJogoActivity : AppCompatActivity() {
 
@@ -15,8 +16,17 @@ class DetalheJogoActivity : AppCompatActivity() {
         binding = ActivityDetalheJogoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val jogo = intent.getSerializableExtra("jogo") as Jogo
+        val jogo = intent.getSerializableExtra("jogo")
+        val ano = intent.getSerializableExtra("ano")
+        val descricao = intent.getSerializableExtra("descricao")
+        val url = intent.getSerializableExtra("url")
 
-        Log.i("DetalheJogo", jogo.nome.toString())
+        binding.tvNomeDetalheCapaJogo.text = jogo.toString()
+        binding.detalhesJogo.tvNomeDetalheJogo.text = jogo.toString()
+        binding.detalhesJogo.tvAnoDetalheJogo.text = ano.toString()
+        binding.detalhesJogo.tvDescricaoDetalheJogo.text = descricao.toString()
+
+        Picasso.get().load(url.toString())
+            .into(binding.ivImagemDetalheJogo)
     }
 }
