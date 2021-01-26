@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+
+    <TextView
+        android:id="@+id/tvNomeDetalheJogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+    <TextView
+        android:id="@+id/tvLancamentoDetalheJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lançamento: "
+        android:textColor="@color/cinza"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvAnoDetalheJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000"
+        android:textColor="@color/cinza"
+        android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDescricaoDetalheJogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis, mi eget fringilla vestibulum, turpis ipsum tempor odio, vitae facilisis tellus lorem a elit. Sed velit sapien, euismod vel velit quis, lobortis ultricies nulla. Aenean non risus vitae erat fringilla tempor id id metus. Cras at aliquet lacus, vitae dictum mauris. Quisque porta mattis nisi, sed eleifend leo tincidunt a. Vestibulum pulvinar, lacus eu vehicula faucibus, mauris odio tempor dolor, in venenatis purus odio a nunc."
+        android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>
