@@ -35,6 +35,7 @@ class HomeActivity : AppCompatActivity() {
         recyclerView.layoutManager = GridLayoutManager(this, 2)
 
         viewModel.getListaJogos()
+
         viewModel.listaJogos.observe(this){
             recyclerView.adapter = JogoAdapter(it, this)
         }

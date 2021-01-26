@@ -2,6 +2,7 @@ package com.digitalhouse.desafiofirebase.jogo.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +30,6 @@ class JogoAdapter(val listaJogos: ArrayList<Jogo>, val context: Context): Recycl
         val currentItem = listaJogos[position]
         holder.nome.text = currentItem.nome
         holder.ano.text = currentItem.ano
-        holder.descricao.text = currentItem.descricao
 
         Picasso.get().load(currentItem.url)
             .into(holder.url)
@@ -53,7 +53,6 @@ class JogoAdapter(val listaJogos: ArrayList<Jogo>, val context: Context): Recycl
     class JogoViewHolder (itemView: View): RecyclerView.ViewHolder(itemView) {
         var nome: TextView = itemView.findViewById(R.id.tvNomeJOgo)
         var ano: TextView = itemView.findViewById(R.id.tvAnoJogo)
-        var descricao: TextView = itemView.findViewById(R.id.tvDescricaoDetalheJogo)
         var url: ImageView = itemView.findViewById(R.id.ivJogo)
 
     }
